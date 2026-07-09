@@ -8,7 +8,7 @@
 
 <!-- Open Graph -->
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://brijeshr18.github.io/brijesh-portfolio/">
+<meta property="og:url" content="https://brijeshr-81.github.io/brijesh-portfolio/">
 <meta property="og:title" content="Brijesh R — Senior Software Engineer & Engineering Lead">
 <meta property="og:description" content="I design and lead backend systems that scale — from architecture to production reliability — with 8+ years building distributed, cloud-native platforms in high-stakes, regulated environments.">
 <meta property="og:site_name" content="Brijesh R">
@@ -21,7 +21,7 @@
 
 <nav>
   <div class="nav-inner">
-    <div class="nav-logo">brijesh<span>.dev</span></div>
+    <div class="nav-logo">Brijesh R</div>
     <div class="nav-links">
       <a href="#about">About</a>
       <a href="#experience">Experience</a>
@@ -62,6 +62,7 @@
       <div><span>Focus</span><span>Distributed Systems</span></div>
       <div><span>Leading</span><span>8–10 engineers</span></div>
       <div><span>Core stack</span><span>C# / .NET / Azure</span></div>
+      <div><span>Recognition</span><span>Advanced Pillar Award</span></div>
     </div>
   </div>
 </section>
@@ -71,22 +72,52 @@
   <div class="changelog-entry">
     <div class="changelog-head">
       <h3>OneAdvanced</h3>
-      <span class="changelog-date">2018 — Present</span>
+      <span class="changelog-date">2025 — Present</span>
     </div>
-    <div class="changelog-role">Senior Software Engineer (Acting Engineering Lead)</div>
+    <div class="changelog-role">Technical Team Lead (Acting) — Senior Software Engineer</div>
+    <div class="changelog-context">Leading engineering across 3 healthcare SaaS platforms (150K+ API requests/day, 10+ NHS clients, 20+ tenant environments).</div>
     <ul class="diff-list">
-      <li>Led engineering across 3 healthcare SaaS platforms serving 150K+ API requests/day, 10+ enterprise clients.</li>
-      <li>Built and ran a team of 8–10 engineers — sprint planning, release management, hiring, and performance cycles.</li>
-      <li>Designed microservices architecture from scratch — service boundaries, REST contracts, event-driven flows.</li>
-      <li>Cut end-to-end latency 35–40% with caching and async processing; rebuilt CI pipeline from 40min → 12min.</li>
-      <li>Held 99.9%+ uptime through observability, circuit breakers, and disciplined incident review.</li>
+      <li>Lead a team of 8–10 engineers across 3 product lines. Handle sprint planning, release management, and cross-team dependency resolution, pushing team velocity up by ~20%.</li>
+      <li>Designed the microservices architecture for the core NHS platform from scratch. Mapped service boundaries, defined REST API contracts, and wired up Azure Service Bus event flows to keep services decoupled at 150K+ requests/day.</li>
+      <li>Led the migration from a monolith to microservices for a large NHS platform, breaking the existing system into independently deployable services with clear bounded contexts.</li>
+      <li>Own production for NHS-facing systems around the clock. Triage incidents, lead rollbacks, and run post-mortems, which cut production incidents by ~25% over time.</li>
+      <li>Rolled out SonarQube quality gates and architecture review practices across teams, reducing defects reaching production.</li>
+      <li>Run hiring, onboarding, and performance cycles for the team. Wrote onboarding playbooks that cut new-hire ramp-up time by ~30%.</li>
+      <li>Work directly with senior engineering and product leadership on platform direction. Shaped architecture decisions on two major initiatives and made the case for modernisation investment.</li>
+      <li>Run external stakeholder meetings with NHS client organisations and a third-party integration partner to gather requirements and resolve T3 incidents directly with them.</li>
+      <li>Keep releases on schedule; when a delay is unavoidable, discuss it with senior management directly and agree on an extended timeframe rather than letting it slip quietly.</li>
+      <li>Keep the platform at 99.9%+ uptime through proper observability, circuit breakers, and a team that reviews incidents and closes the loop.</li>
     </ul>
     <div class="tag-row">
       <span class="tag">.NET Core</span>
       <span class="tag">Microservices</span>
       <span class="tag">Azure</span>
       <span class="tag">AKS</span>
+      <span class="tag">Leadership</span>
+    </div>
+  </div>
+  <div class="changelog-entry">
+    <div class="changelog-head">
+      <h3>OneAdvanced</h3>
+      <span class="changelog-date">2018 — 2025</span>
+    </div>
+    <div class="changelog-role">Senior Software Engineer</div>
+    <ul class="diff-list">
+      <li>Built multi-tenant data isolation and API versioning into a migrated platform, so multiple squads could ship in parallel without stepping on each other.</li>
+      <li>Set up API gateway security through Azure APIM with OAuth2/JWT. Applied rate limiting, auth enforcement, and secure coding standards consistently across every service.</li>
+      <li>Containerised all services with Docker and worked with DevOps on AKS rollouts and secret management. Zero-downtime releases became the norm across all 3 products.</li>
+      <li>Wired up Application Insights across the stack, giving the team distributed traces, structured logs, and dashboards to see what was happening in production in real time.</li>
+      <li>Cut end-to-end latency by 35–40% with Redis caching and async processing on clinical workflows that used to lag under load.</li>
+      <li>Rewrote slow SQL queries, fixed missing indexes, and cleaned up transaction logic. Response times dropped by up to 40% on the queries that mattered most at peak concurrent load.</li>
+      <li>Rebuilt the CI pipeline from the ground up, cutting build times from 40 minutes to 12 minutes, a 70% reduction.</li>
+      <li>Rolled out GitHub Copilot across the team, speeding up boilerplate work and making PRs more consistent.</li>
+    </ul>
+    <div class="tag-row">
+      <span class="tag">.NET Core</span>
       <span class="tag">Redis</span>
+      <span class="tag">Docker</span>
+      <span class="tag">CI/CD</span>
+      <span class="tag ai">GitHub Copilot</span>
     </div>
   </div>
 </section>
@@ -128,9 +159,7 @@
     </div>
     <div class="project-card">
       <h3>Applied AI Workflows <span style="color:var(--accent-ai); font-size:13px;">— exploring</span></h3>
-      <p>Folding generative AI into day-to-day engineering — RAG for internal knowledge, agentic workflows via MCP, and Copilot-driven review standards.</p>
-      <!-- PLACEHOLDER: concrete AI-artifact case study (something actually built/prototyped) — add when available, don't fabricate -->
-      <span class="coming-soon">// case study write-up — coming soon</span>
+      <p>Folding generative AI into day-to-day engineering — RAG for internal knowledge, agentic workflows via MCP, and Copilot-driven review standards. Won an internal hackathon building a tool that transcribes clinician-patient calls, automatically extracts urgency, presenting problem, and patient details, and feeds them straight into the clinical management system.</p>
       <div class="stack-pills">
         <span class="tag ai">RAG</span>
         <span class="tag ai">MCP</span>
@@ -152,13 +181,13 @@
     <div class="skill-group">
       <h4>Cloud &amp; Data</h4>
       <div class="skill-tags">
-        <span class="tag">Azure</span><span class="tag">AWS</span><span class="tag">SQL Server</span><span class="tag">Cosmos DB</span><span class="tag">Redis</span>
+        <span class="tag">Azure</span><span class="tag">AWS</span><span class="tag">SQL Server</span><span class="tag">Cosmos DB</span><span class="tag">Redis</span><span class="tag">OAuth2</span><span class="tag">JWT</span>
       </div>
     </div>
     <div class="skill-group">
       <h4>DevOps</h4>
       <div class="skill-tags">
-        <span class="tag">Docker</span><span class="tag">Kubernetes</span><span class="tag">GitHub Actions</span><span class="tag">SonarQube</span>
+        <span class="tag">Docker</span><span class="tag">Kubernetes</span><span class="tag">GitHub Actions</span><span class="tag">Jenkins</span><span class="tag">SonarQube</span>
       </div>
     </div>
     <div class="skill-group">
@@ -170,7 +199,7 @@
     <div class="skill-group">
       <h4>AI</h4>
       <div class="skill-tags">
-        <span class="tag ai">Generative AI</span><span class="tag ai">RAG</span><span class="tag ai">MCP</span>
+        <span class="tag ai">Generative AI</span><span class="tag ai">RAG</span><span class="tag ai">MCP</span><span class="tag ai">GitHub Copilot</span>
       </div>
     </div>
     <div class="skill-group">
